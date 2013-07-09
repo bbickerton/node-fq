@@ -1,0 +1,12 @@
+{
+    "unused": true,
+    "eqeqeq": true,
+    "immed": true,
+    "noarg": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "node": true,
+    "strict": false,
+    "indent": 2
+}
