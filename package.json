@@ -5,4 +5,7 @@
   "keywords": [
     "fq"
   ],
+  "dependencies": {
+    "libuuid": "0.0.3"
+  }
 }
