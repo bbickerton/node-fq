@@ -8,5 +8,5 @@
     "trailing": true,
     "node": true,
     "strict": false,
-    "indent": 2
+    "indent": 4
 }
