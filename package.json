@@ -1,10 +1,24 @@
 {
   "name": "fq",
-  "version": "0.0.0",
-  "description": "fq message queue client",
+  "version": "0.1.0",
+  "author": {
+    "name": "Brian Bickerton",
+    "url": "http://brianbickerton.com/"
+  },
+  "description": "Client for fq message queue",
   "keywords": [
-    "fq"
+    "fq",
+    "queue"
   ],
+  "main": "./lib/client.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TauZero/node-fq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TauZero/node-fq/issues"
+  },
+  "license": "MIT",
   "dependencies": {
     "async": "~0.2.9",
     "node-uuid": "~1.4.0"
