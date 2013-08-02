@@ -21,6 +21,6 @@
   "license": "MIT",
   "dependencies": {
     "async": "~0.2.9",
-    "node-uuid": "~1.4.0"
+    "libuuid": "~0.1.0"
   }
 }
