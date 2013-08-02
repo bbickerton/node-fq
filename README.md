@@ -135,10 +135,11 @@ Emitted when a new message has been read
 
 ## FqMessage
 
-FqMessages store values as buffers and hops ips as arrays. It's safer to let to the consumer decide what format it wants the data in. It also makes for faster republishing.
+FqMessages store values as buffers and hops ips as arrays.
 
 ### Example
-    { msgId: <Buffer 01 00 00 00 5a e8 5f 00 00 00 48 8b c6 48 8b 40>,
+    {
+      msgId: <Buffer 01 00 00 00 5a e8 5f 00 00 00 48 8b c6 48 8b 40>,
       numHops: 1,
       hops: [ [ 127, 0, 0, 1 ] ],
       routeLen: 15,
@@ -150,7 +151,27 @@ FqMessages store values as buffers and hops ips as arrays. It's safer to let to 
       payloadLen: 6,
       payload: <Buffer 66 6f 6f 62 61 72>,
       _complete: true,
-      iovec: null }
+    }
+
+### FqMessage API
+
+Only use the setters for setting values, as they will keep the `*Len` properties in sync with the values. The setters accept utf8 `String` or `Buffer`. There are also several getters for convenience that return utf8 `String`.
+
+#### message.setMsgId(val)
+
+Note: msgId is a 16 byte `Buffer`. Providing a `Buffer` or `String` longer will result in truncation.
+
+#### message.setRoute(val)
+#### message.getRoute()
+#### message.setSender(val)
+#### message.getSender()
+#### message.setExchange(val)
+#### message.getExchange()
+#### message.getHops()
+
+Returns an array of utf8 `String`
+
+#### message.setPayload(val)
 
 ## License
 
