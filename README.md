@@ -2,6 +2,10 @@
 
 [fq message queue](https://github.com/postwait/fq) client written in [Node.js](http://nodejs.org/).
 
+## Installation
+
+    npm install fq
+
 ## Examples
 
 ### Publish a Message
