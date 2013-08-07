@@ -1,6 +1,6 @@
 {
   "name": "fq",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Brian Bickerton",
     "url": "http://brianbickerton.com/"
@@ -22,5 +22,8 @@
   "dependencies": {
     "async": "~0.2.9",
     "libuuid": "~0.1.0"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.1"
   }
 }
