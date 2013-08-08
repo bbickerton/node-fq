@@ -57,4 +57,3 @@ exports['Connecting with no parameters'] = function(test){
         test.done();
     });
 };
-
