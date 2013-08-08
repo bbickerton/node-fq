@@ -1,5 +1,4 @@
 # node-fq
-[![Build Status](https://travis-ci.org/TauZero/node-fq.png)](https://travis-ci.org/TauZero/node-fq)
 
 [fq message queue](https://github.com/postwait/fq) client written in [Node.js](http://nodejs.org/).
 
