@@ -73,11 +73,15 @@ Connects to fq. This establishes two TCP connections, one for commands and one f
 
 Changes the heartbeat settings and alerts fq of the change.
 
-#### client.bind(exchange, program, peerMode, callback)
+#### client.bind(exchange, program, flags, callback)
 
 * `exchange`: (string) Exchange to bind to
 * `program`: (string) Route information.
-* `peerMode`: (boolean)
+* `flags`: (int)
+    * : 0 (0x000000010)
+    * peer: 1 (0x00000001)
+    * perm: 272 (0x00000110)
+    * trans: 256 (0x00000100)
 * `callback(err,binding)`: (function) Called after fq responds to the bind request. 
 
 Binds the client connection pair to a specific exchange and routing program. Required before consuming, but not necessary for publishing.
