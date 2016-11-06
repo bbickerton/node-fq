@@ -18,7 +18,7 @@ exports['Connecting with wrong parameters'] = function(test){
 
 exports['Connecting with correct parameters'] = function(test){
     test.expect(1);
-    var client = new FqClient({host:'localhost', port:8765});
+    var client = new FqClient({host:'127.0.0.1', port:8765});
     client.connect();
     client.on('connect', function(){
         test.ok(true, 'error');
