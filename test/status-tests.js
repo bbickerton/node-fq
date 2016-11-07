@@ -24,12 +24,14 @@ module.exports = {
             exchange: 'testfooexchange',
             payload: 'foobarbaz'
         }, function(err, success){
-            client.status(function(err,status){
-                test.ok(!err,'error');
-                test.ok(status, 'no status');
-                test.equal(status.msgs_in, 1, 'msgs_in != 1');
-                test.done();
-            });
+            setTimeout(function() {
+                client.status(function(err,status){
+                    test.ok(!err,'error');
+                    test.ok(status, 'no status');
+                    test.equal(status.msgs_in, 1, 'msgs_in != 1');
+                    test.done();
+                })
+            }, 500);
         });
     }
 };
